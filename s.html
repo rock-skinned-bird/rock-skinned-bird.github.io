@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="parker, impression, you">
+  <meta name="author" content="Parker Chen">
+  <title>Parker's impression of you 1.0</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    var changeEmoji=function(){
+  var emoji=
+     document.getElementById ("emoji");
+if (fname.value !== "Parker") {
+    emoji.innerHTML = "🤮";
+}else{
+  emoji.innerHTML="😄";
+}
+}
+  </script>
+</head>
+  
+<body>
+  <h1>Enter you name below</h1>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="">
+  <button class="button button1" type="button"
+          onclick="changeEmoji()">
+Let's see~</button>
+  <div id="emoji" value="😀">😀</>
+  
+</body>
+</html>
