@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="style.css">
   <script>
     var I = ["Parker", "Zhi", "Chen"]
-    var best = ["Nathan", "Jonathan", "Caleb"]
-    var squad = ["Anna", "Eric", "Eliana"]
+    var best = ["Nathan", "Caleb"]
+    var s = ["Anna", "Eric", "Eliana"]
     var worst = ["Andrew", "Mosley", "Dewayne"]
     let names = ["Anna",]
     var changeEmoji=function(){
@@ -22,11 +22,14 @@
       else if(best.includes(fname.value)){
         emoji.innerHTML = "😎"
       }
-      else if(squad.includes(fname.value)){
+      else if(s.includes(fname.value)){
         emoji.innerHTML = "🤢"
       }
       else if(worst.includes(fname.value)){
         emoji.innerHTML = "😱"
+      }
+      else if(fname.value === "Josh"){
+        emoji.innerHTML ="😍"
       }
       else{
         emoji.innerHTML="🤮";
