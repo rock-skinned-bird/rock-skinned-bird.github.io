@@ -12,7 +12,7 @@
     var best = ["Nathan", "Jonathan", "Caleb"]
     var squad = ["Anna", "Eric", "Eliana"]
     var worst = ["Andrew", "Mosley", "Dewayne"]
-    
+    let names = ["Anna",]
     var changeEmoji=function(){
       var emoji=
          document.getElementById ("emoji");
@@ -48,7 +48,8 @@ Let's see~</button>
     input.addEventListener("keyup", function(event) {
       if (event.keyCode === 13) {
        event.preventDefault();
-        document.getElementById("button").click();
+       document.getElementById("button").click();
+       let names=names.push(fname.value); 
       }
    });
   </script>
