@@ -12,25 +12,31 @@
     var best = ["Nathan", "Caleb"]
     var s = ["Anna", "Eric", "Eliana"]
     var worst = ["Andrew", "Mosley", "Dewayne"]
+    var josh = ["Josh", "Gage"]
+    var friends = ["James", "Mary", "Hannah", "Esther", "Cole", "Theo", "Kendra"]
     let names = ["Anna",]
     var changeEmoji=function(){
-      var emoji=
-         document.getElementById ("emoji");
+    var emoji=document.getElementById ("emoji");
       if (I.includes(fname.value)) {
         emoji.innerHTML = "😄";
       }
       else if(best.includes(fname.value)){
-        emoji.innerHTML = "😎"
+        emoji.innerHTML = "😎";
       }
       else if(s.includes(fname.value)){
-        emoji.innerHTML = "🤢"
+        emoji.innerHTML = "🤢";
       }
       else if(worst.includes(fname.value)){
-        emoji.innerHTML = "😱"
+        emoji.innerHTML = "😱";
       }
-      else if(fname.value === "Josh"){
-        emoji.innerHTML ="😍"
+      else if(josh.includes(fname.value)){
+        emoji.innerHTML ="😍";
       }
+      else if(friends.includes(fname.value)){
+        emoji.innerHTML ="🤔";
+      }
+      else if(fname.value === "Isaboy"){
+        emoji.innerHTML ="😏";
       else{
         emoji.innerHTML="🤮";
       }
@@ -57,6 +63,7 @@ Let's see~</button>
    });
   </script>
   <div id="emoji">😀</div>
+  <h5>Capitalize the first letter</h5>
   <div id = "updateTime">A more serious version will come out later<br>updated 1/28/2021 8:35</div>
 </body>
 </html>
