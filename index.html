@@ -5,29 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="parker, impression, you">
   <meta name="author" content="Parker Chen">
-  <title>Parker's impression of you 1.0</title>
+  <title>Parker's impression of you 1.1</title>
   <link rel="stylesheet" href="style.css">
   <script>
+    var I = ["Parker", "Zhi", "Chen"]
+    var best = ["Nathan", "Jonathan"]
+    var squad = ["Anna", "Eric", "Eliana"]
+    var worst = ["Andrew", "Mosley", "Dewayne"]
+    
     var changeEmoji=function(){
-  var emoji=
-     document.getElementById ("emoji");
-if (fname.value !== "Parker") {
-    emoji.innerHTML = "🤮";
-}else{
-  emoji.innerHTML="😄";
-}
-}
+      var emoji=
+         document.getElementById ("emoji");
+      if (I.includes(fname.value)) {
+        emoji.innerHTML = "😄";
+      }
+      else if(best.includes(fname.value)){
+        emoji.innerHTML = "😎"
+      }
+      else if(squad.includes(fname.value)){
+        emoji.innerHTML = "🤢"
+      }
+      else if(worst.includes(fname.value)){
+        emoji.innerHTML = "😱"
+      }
+      else{
+        emoji.innerHTML="🤮";
+      }
+    }
   </script>
 </head>
   
 <body>
-  <h1>Enter you name below</h1>
+  <h1>Parker's impression of you 1.1</h1>
+  <h2>Enter you name below</h2>
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname" value="">
   <button class="button button1" type="button"
           onclick="changeEmoji()">
 Let's see~</button>
-  <div id="emoji" value="😀">😀</>
-  
+  <div id="emoji">😀</div>
+  <div id = "updateTime">A more serious version will come out later<br>updated 1/28/2021 8:35</div>
 </body>
 </html>

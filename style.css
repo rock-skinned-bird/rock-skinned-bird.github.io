@@ -29,7 +29,12 @@ body{
   background-color: #4CAF50;
   color: white;
 }
-div{
+#emoji{
   font-size:10vw;
   margin:10px;
+}
+#updateTime{
+  font-size:1vw;
+  text-align:right;
+  color:gray;
 }
