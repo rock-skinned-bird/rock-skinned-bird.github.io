@@ -16,38 +16,38 @@
     var friends = ["James", "Mary", "Hannah", "Esther", "Cole", "Theo", "Kendra",]
     let names = ["Anna",]
     var changeEmoji=function(){
-    var emoji=document.getElementById ("emoji");
-      if (I.includes(fname.value)) {
-        emoji.innerHTML = "😄";
-      }
-      else if(best.includes(fname.value)){
-        emoji.innerHTML = "😎";
-      }
-      else if(s.includes(fname.value)){
-        emoji.innerHTML = "🤢";
-      }
-      else if(worst.includes(fname.value)){
-        emoji.innerHTML = "😱";
-      }
-      else if(josh.includes(fname.value)){
-        emoji.innerHTML ="😍";
-      }
-      else if(friends.includes(fname.value)){
-        emoji.innerHTML ="🤔";
-      }
-      else if(fname.value === "Isaboy"){
-        emoji.innerHTML ="😏";
-      }
-      else if(fname.value === "Andrew",){
-        emoji.innerHTML ="🌚";
-      }  
-      else if(fname.value === "Lily",){
-        emoji.innerHTML ="🌝";
-      }  
-      else{
-        emoji.innerHTML="🤮";
-      }
-    
+      var emoji=document.getElementById ("emoji");
+        if (I.includes(fname.value)) {
+          emoji.innerHTML = "😄";
+        }
+        else if(best.includes(fname.value)){
+          emoji.innerHTML = "😎";
+        }
+        else if(s.includes(fname.value)){
+          emoji.innerHTML = "🤢";
+        }
+        else if(worst.includes(fname.value)){
+          emoji.innerHTML = "😱";
+        }
+        else if(josh.includes(fname.value)){
+          emoji.innerHTML ="😍";
+        }
+        else if(friends.includes(fname.value)){
+          emoji.innerHTML ="🤔";
+        }
+        else if(fname.value === "Isaboy"){
+          emoji.innerHTML ="😏";
+        }
+        else if(fname.value === "Andrew"){
+          emoji.innerHTML ="🌚";
+        }  
+        else if(fname.value === "Lily"){
+          emoji.innerHTML ="🌝";
+        }  
+        else{
+          emoji.innerHTML="🤮";
+        }
+    }
   </script>
 </head>
   
@@ -56,7 +56,7 @@
   <h2>Enter you name below (or others')</h2>
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname" value="">
-  <button class="button button1" id="button" type="button"
+  <button class="button button1" id="button"type="button"
           onclick="changeEmoji()">
 Let's see~</button>
   <script>
@@ -65,7 +65,6 @@ Let's see~</button>
       if (event.keyCode === 13) {
        event.preventDefault();
        document.getElementById("button").click();
-       let names=names.push(fname.value); 
       }
    });
   </script>
