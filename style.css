@@ -1,4 +1,4 @@
-body{
+.impression{
   text-align:center;
   zoom: 150%;
   
@@ -37,4 +37,8 @@ body{
   font-size:1vw;
   text-align:right;
   color:gray;
+}
+.schedule{
+  text-align:center;
+  font-size:larger;
 }

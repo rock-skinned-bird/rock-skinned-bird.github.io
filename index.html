@@ -52,24 +52,27 @@
 </head>
   
 <body>
-  <h1>Parker's impression of you 1.4(gotcha version)</h1>
-  <h2>Enter you name below (or others')</h2>
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname" value="">
-  <button class="button button1" id="button"type="button"
-          onclick="changeEmoji()">
-Let's see~</button>
-  <script>
-    var input = document.getElementById("fname");
-    input.addEventListener("keyup", function(event) {
-      if (event.keyCode === 13) {
-       event.preventDefault();
-       document.getElementById("button").click();
-      }
-   });
-  </script>
-  <div id="emoji">😀</div>
-  <h5>Capitalize the first letter</h5>
-  <div id = "updateTime">A more serious version will come out later<br>updated 1/30/2021 15:03</div>
+  <a href = "delaySchedule.html">Two hour delay schedule</a>
+  <div class = "impression">
+    <h1>Parker's impression of you 1.4(gotcha version)</h1>
+    <h2>Enter you name below (or others')</h2>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" value="">
+    <button class="button button1" id="button"type="button"
+            onclick="changeEmoji()">
+    Let's see~</button>
+    <script>
+      var input = document.getElementById("fname");
+      input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button").click();
+        }
+    });
+    </script>
+    <div id="emoji">😀</div>
+    <h5>Capitalize the first letter</h5>
+    <div id = "updateTime">A more serious version will come out later<br>updated 1/30/2021 15:03</div>
+  </div>
 </body>
 </html>
